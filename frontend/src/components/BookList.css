@@ -1,0 +1,64 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebf0ef;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  max-width: 400px;
+}
+
+li h2 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  color: #291f1e;
+}
+
+li p {
+  margin: 5px;
+  color: #291f1e;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #291f1e;
+}
+
+.category {
+  color: #586f6b;
+  
+  text-align: justify;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.book-card-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.delete-button {
+  padding: 0;
+  background-color: transparent;
+  color: #291f1e;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  align-self: flex-end;
+}
+
+.delete-button:hover {
+  color: #291f1e;
+  background-color: transparent;
+}

@@ -1,0 +1,1 @@
+{"title":"Harry Potter","writer":"J. K. Rowling","description":"asdsad","category":"fiction","price":"12.0"}BOOK_SPLIT{"title":"Harry Potter","writer":"J. K. Rowling","description":"asdsad","category":"fiction","price":"12.0"}BOOK_SPLIT{"title":"ads","writer":"das","description":"das","category":"Fiction","price":"2"}BOOK_SPLIT

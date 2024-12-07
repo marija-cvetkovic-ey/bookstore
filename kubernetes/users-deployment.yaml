@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: users-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: users
+  template: 
+    metadata:
+      labels:
+        app: users
+    spec:
+      containers:
+        - name: users
+          image: jmcvetkovic/kub-demo-users:latest
+          env:
+            - name: AUTH_ADDRESS
+              #value: "10.105.126.37"
+              value: "auth-service.default"
+          volumeMounts:
+            - mountPath: "/usr/src/app/data"  # Path inside the container where the volume will be mounted
+              name: users-data
+      volumes:
+        - name: users-data
+          persistentVolumeClaim:
+            claimName: users-data-pvc
